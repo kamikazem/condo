@@ -13,6 +13,7 @@ class indexModels extends Adodb {
 
     public function __construct(){
         $this->dsn = Common::read_ini(PATH.'config/config.ini', 'server_main');
+        $this->dsn_panel = Common::read_ini(PATH.'config/config.ini', 'server_panel');
     }
 
     /**
@@ -20,7 +21,7 @@ class indexModels extends Adodb {
      */
     public function usr_sis_sistemas($p){
         parent::ReiniciarSQL();
-        parent::ConnectionOpen($this->dsn, 'usr_sis_sistemas');
+        parent::ConnectionOpen($this->dsn_panel, 'usr_sis_sistemas');
         parent::SetParameterSP(USR_ID, 'int');
         $array = parent::ExecuteSPArray();
         return $array;
@@ -32,7 +33,7 @@ class indexModels extends Adodb {
      */
     public function usr_sis_change_first_sistema($p){
         parent::ReiniciarSQL();
-        parent::ConnectionOpen($this->dsn, 'usr_sis_change_first_sistema');
+        parent::ConnectionOpen($this->dsn_panel, 'usr_sis_change_first_sistema');
         parent::SetParameterSP(USR_ID, 'int');
         parent::SetParameterSP($p['sis_id'], 'int');
         parent::SetParameterSP(Common::get_Ip(), 'varchar');
@@ -46,7 +47,7 @@ class indexModels extends Adodb {
      */
     public function usr_sis_menus($p){
         parent::ReiniciarSQL();
-        parent::ConnectionOpen($this->dsn, 'usr_sis_menus');
+        parent::ConnectionOpen($this->dsn_panel, 'usr_sis_menus');
         parent::SetParameterSP(USR_ID, 'int');
         parent::SetParameterSP($p['sis_id'], 'int');
         // echo '=>' . parent::getSql() . '</br>';
@@ -60,7 +61,7 @@ class indexModels extends Adodb {
      */
     public function usr_sis_servicios($p){
         parent::ReiniciarSQL();
-        parent::ConnectionOpen($this->dsn, 'usr_sis_servicios');
+        parent::ConnectionOpen($this->dsn_panel, 'usr_sis_servicios');
         parent::SetParameterSP(USR_ID, 'int');
         parent::SetParameterSP(SIS_ID, 'int');
         parent::SetParameterSP($p['vp_mod_id'], 'int');

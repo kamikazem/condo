@@ -71,7 +71,7 @@
             login.init();
         });
     </script>
-    <script src="/js/ocanvas.min.js.download"></script>
-    <script src="/js/index.min.js.download"></script>
+    <script src="/js/ocanvas.min.js"></script>
+    <script src="/js/index.min.js"></script>
 </body>
 </html>
