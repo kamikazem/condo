@@ -28,8 +28,16 @@ input[type="text"]:focus
 
 body
     background-color gris_fondo
-    font-family 'Varela Round', sans-serif
-    font-size 16px
+    /*font-family 'Varela Round', sans-serif
+    font-size 16px*/
+    background-image: url("/images/fondos/1926.jpg")
+    /* Full height */
+    height: 100%
+
+    /* Center and scale the image nicely */
+    /*background-position: center*/
+    background-repeat: no-repeat
+    background-size: cover
 
 .contenedor_login
     background-color rgba(#333333, .01)
@@ -42,6 +50,7 @@ body
     position absolute
     top 50%
     width 480px
+    z-index:999999
 
 .contenedor_login_in
     background-color white
@@ -49,7 +58,7 @@ body
     height 100%
 
     header
-        background-color #151515
+        background: linear-gradient(45deg, #0f0d2f, #24101f);
         border 1px solid #d8d8d8
         border-radius 5px 5px 0 0
         box-shadow 0 0 5px 0 gray
@@ -57,13 +66,13 @@ body
         height 60px
         position relative
         .logo
-            background url('/images/front/logo_madison.png') no-repeat
+            background url('/images/front/logo_condominios.png') no-repeat
             display inline-block
             font-size 0
             height 45px
             margin .5rem
             vertical-align middle
-            width 145px
+            width 200px
 
         .welcome
             border-left .12em solid gray
@@ -72,7 +81,7 @@ body
             font-size 0
             font-size 1.1rem
             line-height 1em
-            margin-left 11em
+            margin-left 8em
             padding 0 0 0 .4em
             vertical-align middle
 

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Zucuba</title>
+    <title>.: CONDOMINIOS :.</title>
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/loginChange_bootstrap.css">
@@ -59,7 +59,7 @@
         <div class="sello_izq"></div>
         <div class="creditos">
             <p>
-                <span>Copyright&copy; Zucuba Perú</span>
+                <span>Copyright&copy; Condominios Perú</span>
                 <span>Todos los derechos reservados</span>
             </p>
         </div>

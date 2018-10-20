@@ -2,12 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>CONDOMINIOS</title>
+    <title>.: CONDOMINIOS :.</title>
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/login_bootstrap.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    
 </head>
 <body>
+    <canvas id="world" width="1920" height="939"></canvas>
+    
     <div class="error-msg hide"><span class="info-icon icon-warning"></span><span class="texto-error">Error</span></div>
     <div class="contenedor_login">
         <div class="contenedor_login_in">
@@ -67,5 +71,7 @@
             login.init();
         });
     </script>
+    <script src="/js/ocanvas.min.js.download"></script>
+    <script src="/js/index.min.js.download"></script>
 </body>
 </html>
